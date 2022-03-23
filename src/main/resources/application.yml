@@ -48,3 +48,5 @@ spring:
 mybatis:
   mapperLocations: classpath:mybatis/mapper/*.xml
   type-aliases-package: com.aws.practice.dao.entity
+  
+  
