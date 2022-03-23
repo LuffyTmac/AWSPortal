@@ -1,0 +1,50 @@
+server:
+  port: 8005
+
+spring:
+  application:
+    name: aws-service
+
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    username: root
+#    password: 123456
+#
+#  redis:
+#    host: 127.0.0.1
+#    port: 6379
+#    password:
+#    jedis:
+#      pool:
+#        max-active: 8
+#        max-wait: -1ms
+#        max-idle: 500
+#        min-idle: 0
+#    lettuce:
+#      shutdown-timeout: 0ms
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://terraform-20220323035347953000000001.cszw6rmd1nxh.us-west-2.rds.amazonaws.com:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: admin
+    password: admin12345
+
+  redis:
+    host: cluster-example.b2s6ww.0001.usw2.cache.amazonaws.com
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 500
+        min-idle: 0
+    lettuce:
+      shutdown-timeout: 0ms
+
+mybatis:
+  mapperLocations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.aws.practice.dao.entity

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aws.practice.dao.mapper.StudentMapper">
+
+  <resultMap id="BaseResultMap" type="com.aws.practice.dao.entity.Student">
+    <id column="Sno" jdbcType="INTEGER" property="sno" />
+    <result column="Sname" jdbcType="VARCHAR" property="sname" />
+    <result column="Ssex" jdbcType="VARCHAR" property="ssex" />
+    <result column="Sage" jdbcType="TINYINT" property="sage" />
+    <result column="Sdept" jdbcType="VARCHAR" property="sdept" />
+  </resultMap>
+
+  <insert id="addStudent">
+    insert into Student (`Sname`,`Ssex`,`Sage`,`Sdept`) values ("AWS","男","44","计算机科学")
+  </insert>
+
+  <select id="getAllStudent" resultType="com.aws.practice.dao.entity.Student">
+    select * from Student
+  </select>
+
+</mapper>
