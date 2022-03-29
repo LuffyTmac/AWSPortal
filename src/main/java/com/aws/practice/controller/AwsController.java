@@ -25,7 +25,7 @@ public class AwsController
 
 	@GetMapping(value = "sayHello")
 	public String sayHello(){
-		return "Hi, AWS 啦啦啦啦啦啦!";
+		return "Hi, AWS 20220329!";
 	}
 
 	@RequestMapping(value = "saveDataToDB")
