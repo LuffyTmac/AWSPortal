@@ -52,7 +52,7 @@ public class AwsController
 	@RequestMapping(value = "saveDataToRedis")
 	public String saveDataToRedis(@RequestParam("msg") String msg){
 		try {
-			redisUtil.set("yangxiaowei", "OMG_" + msg);
+			redisUtil.set("yangxiaowei", "aws_" + msg);
 			return "Success,please check redis !";
 		}catch (Exception e){
 			e.printStackTrace();
