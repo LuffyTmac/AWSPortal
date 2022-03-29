@@ -30,7 +30,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://terraform-20220329024003046300000001.cszw6rmd1nxh.us-west-2.rds.amazonaws.com:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: admin
-    password: admin12345
+    password: admin123456
 
   redis:
     host: cluster-example.b2s6ww.0001.usw2.cache.amazonaws.com
